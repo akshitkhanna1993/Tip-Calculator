@@ -1,0 +1,193 @@
+.calculator-section{
+    margin-top: 2.5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.header-box{
+    display: block;
+    position: relative;
+    left: 40%;
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+
+.header-box div {
+        color: #008B8B;
+}
+
+.outputs{
+    background-color: #004b4b;
+    width: 100%;
+    margin: 3%;
+    border-radius: 8px;
+    
+}
+
+.inputs{
+   
+    width: 100%;
+    padding-left: 2%;
+}
+
+
+.input-label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24p;
+    letter-spacing: 0.5;
+    color: #007272;
+
+}
+
+input{
+    width: 100%;
+    padding-left: 30px;
+    font-size: 20px;
+    border: none;
+    color: #004b4b;
+    font-weight: 600;
+  background-color: lightcyan;
+}
+
+.dollar{
+    position: relative; 
+    left: 2%; 
+    bottom: 30px;
+}
+
+.discount{
+    background-color: #004b4b;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    width: 25%;
+    padding: 8px;
+    margin-right: 5%;
+    margin-top: 5px;
+}
+
+.custom-input{
+    margin-top: 10px;
+    width: 25%;
+}
+
+.discount-box{
+    display: flex;
+    padding-left: 10px;
+}
+
+.people-box{
+    margin-top: 20px;
+}
+.inner-box{
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    height: 22rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow:0px 1px 13px -4px
+}
+
+.people-icon{
+    position: relative;
+    bottom: 28px;
+    left: 10px;
+}
+
+.tip-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.per{
+    color: #05b99b;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.tip-section label{
+ color: #05b99b;
+ font-size: 24px;
+ line-height: 24px;
+ letter-spacing: 0.5px;
+ font-weight: 700;
+}
+
+.total-section label{
+    color: #05b99b;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+   }
+
+   .amount-box{
+       padding: 25px;
+   }
+
+   .reset-btn{
+       background-color: #05b99b;
+       color: #004b4b;
+       width: 100%;
+       font-weight: 700;
+
+   }
+
+   .discount:hover{
+       background: #00bebe;
+       color: #004b4b;
+
+   }
+   .discount:active{
+    background: #00bebe;
+    color: #004b4b;
+   }
+
+   .error-msg{
+    color: #d86d00; 
+    float: right;
+   }
+  .error-border{
+      border: 1px solid #d86d00;
+  }
+
+
+   @media only screen and  (min-width: 300px) and (max-width: 768px) {
+    .inner-box{
+        display: block;
+        height: 32rem;
+    }
+    .outputs{
+        margin: unset;
+        height: 50%;
+    }
+
+    .calculator-section{
+        margin-top: 2.5%;
+        margin-left: unset;
+        margin-right: unset;
+    }
+    
+ 
+   }

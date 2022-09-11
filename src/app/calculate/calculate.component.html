@@ -1,0 +1,142 @@
+<section>
+  <div class="container">
+    <div class="main-box">
+      <div class="row header-section">
+        <div class="header-box">
+          <!-- <div>SPLI</div>
+          <div>TTER</div> -->
+          <img src="../../assets/logo.svg" height="40px" width="50px" />
+        </div>
+      </div>
+
+      <div class="row calculator-section">
+        <div class="col-lg-12 col-md-12">
+          <div class="inner-box">
+            <div class="inputs">
+              <p class="input-label">Bill</p>
+              <input name="bill" [(ngModel)]="bill" type="text" />
+              <span>
+                <img
+                  class="dollar"
+                  src="../../assets/icon-dollar.svg"
+                  height="15px"
+                  width="15px"
+                />
+              </span>
+
+              <div>
+                <p class="input-label">Select tip %</p>
+              </div>
+
+              <div class="discount-box">
+                <button (click)="chooseTip(5)" class="discount" type="button">
+                  5%
+                </button>
+                <button (click)="chooseTip(10)" class="discount" type="button">
+                  10%
+                </button>
+                <button (click)="chooseTip(15)" class="discount" type="button">
+                  15%
+                </button>
+              </div>
+
+              <div class="discount-box">
+                <button (click)="chooseTip(25)" class="discount" type="button">
+                  25%
+                </button>
+                <button (click)="chooseTip(50)" class="discount" type="button">
+                  50%
+                </button>
+                <input
+                  name="tip"
+                  [(ngModel)]="tip"
+                  class="custom-input"
+                  placeholder="Custom"
+                />
+              </div>
+
+              <div class="people-box">
+                <span class="input-label">Number of People</span>
+                <span class="error-msg" *ngIf="showErrorMessage">
+                  Can't be zero
+                </span>
+                <input
+                  [ngClass]="{ 'error-border': showErrorMessage == true }"
+                  #person
+                  (keyup)="enterPeople(person.value)"
+                  name="persons"
+                  [(ngModel)]="noOfPersons"
+                />
+                <span>
+                  <img
+                    class="people-icon"
+                    src="../../assets/icon-person.svg"
+                    height="15px"
+                    width="15px"
+                  />
+                </span>
+              </div>
+            </div>
+
+            <div class="outputs">
+              <div class="amount-box">
+                <div class="tip-section">
+                  <div>
+                    <p class="amount">Tip amount</p>
+                    <p class="per">/ person</p>
+                  </div>
+                  <div>
+                    <label>
+                      $
+                      {{
+                        tipAmountPerPerson == null ? 0.0 : tipAmountPerPerson
+                      }}
+                    </label>
+                  </div>
+                </div>
+                <div class="total-section">
+                  <div>
+                    <p class="amount">Total</p>
+                    <p class="per">/ person</p>
+                  </div>
+                  <div>
+                    <label>
+                      ${{
+                        totalAmountPerPerson == null
+                          ? 0.0
+                          : totalAmountPerPerson
+                      }}
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <button
+                [disabled]="
+                  tipAmountPerPerson == null || totalAmountPerPerson == null
+                "
+                type="button"
+                class="reset-btn"
+                (click)="reset()"
+              >
+                RESET
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  
+
+Fix height and responsveness issues
+Fix font size and color issues 
+FIx function call and error message
+Hover on buttons
+Readme update
+push to git 
+Submit solution
+Next challenge
+
+-->
