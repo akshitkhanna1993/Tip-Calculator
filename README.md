@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://thetipcalculator.netlify.app/)
+- Solution URL: [Solution](https://your-solution-url.com)
+- Live Site URL: [Live url](https://thetipcalculator.netlify.app/)
 
 
 
